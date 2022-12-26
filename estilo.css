@@ -1,0 +1,500 @@
+* {
+box-sizing: border-box;
+}
+
+body {
+margin: 0px;
+padding: 0px;
+font-family: sans-serif;
+}
+
+.contenedor {
+    height: 100vh;
+    width: 100vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(19,55,121,1) 0%, rgba(2,17,37,1) 100%);
+}
+
+.logo {
+padding: 0px;
+position: absolute;
+width: 10%;
+height: auto;
+left: 0%;
+top: 5%;
+}
+
+.texto {
+position: absolute;
+width: 49%;
+height: 48%;
+left: 15%;
+top: 20%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 2.5vw;
+line-height: 150%;
+color: #ffffff;
+background: none;
+border: none;
+outline: none;
+resize: none;
+}
+
+.texto::placeholder {
+color: #ffffff;
+}
+
+.advertencia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 30vw;
+    height: 1vh;
+    left: 14vw;
+    top: 75vh;
+}
+
+.icono {
+    width: 10%;
+    color: white;
+}
+
+.texto-adv {
+    color: white;
+    font-size: 1.1vw;
+}
+
+
+
+.botones {
+display: flex;
+flex-direction: row;
+padding: 0px;
+position: absolute;
+width: 80%;
+height: 10vh;
+left: 15%;
+top: 80%;
+}
+
+.boton_uno {
+display: flex;
+align-content: center;
+padding: 0;
+width: 30%;
+height: 10vh;
+background: none;
+border-radius: 8% 8% 8% 8% / 35% 35% 35% 35% ;
+border: 1px solid white;
+cursor: pointer;
+align-items: center;
+text-align: center;
+justify-content: center;
+transition: all 0.25s;
+}
+
+.btn_en {
+width: 100%;
+height: 100%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5vw;
+line-height: 10vh;
+color: #ffffff;
+}
+
+.boton_dos {
+display: flex;
+align-content: center;
+padding: 0;
+margin-left: 2%;
+width: 30%;
+height: 10vh;
+background: #ffffff;
+border-radius: 8% 8% 8% 8% / 35% 35% 35% 35% ;
+cursor: pointer;
+align-items: center;
+text-align: center;
+justify-content: center;
+transition: all 0.25s;   
+}
+
+.btn_des {
+width: 100%;
+height: 100%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5vw;
+line-height: 10vh;
+color: #052041;
+}
+
+.boton_tres {
+display: none;
+align-content: center;
+padding: 0;
+margin-left: 7.4%;
+width: 30%;
+height: 10vh;
+background: #ffffff;
+border-radius: 8% 8% 8% 8% / 35% 35% 35% 35% ;
+cursor: pointer;
+align-items: center;
+text-align: center;
+justify-content: center;
+transition: all 0.25s;
+z-index: 1;    
+}
+
+.btn_cop {
+width: 100%;
+height: 100%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5vw;
+line-height: 10vh;
+color: #052041;   
+}
+
+.boton_uno:hover , .boton_dos:hover, .boton_tres:hover {
+    transform: translateY(-10px);
+}
+
+.boton_uno:active , .boton_dos:active, .boton_tres:active{
+    transform: translateY(10px);
+}
+
+.rectangulo {
+    position: absolute;
+    
+    border-radius: 15% 15% 15% 15% / 10% 10% 10% 10% ;
+    box-shadow: 0px 14px 19px 5px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 0px 14px 19px 5px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 14px 19px 5px rgba(0,0,0,0.51);
+    width: 25vw;
+    height: 85vh;
+    left: 70%;
+    top: 10%;
+}
+
+.resultado{
+position: absolute;
+width: 21%;
+display: block;
+height: 60vh;
+left: 72%;
+top: 13%;
+background: none;
+border: none;
+outline: none;
+resize: none;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 1.6vw;
+line-height: 150%;
+color: #8f969c;
+}
+
+.munieco {
+    position: absolute;
+    width: 18%;
+    height: auto;
+    left: 73.5%;
+    top: 30%;
+}
+
+.mensaje {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+position: absolute;
+width: 20%;
+height: auto;
+left: 74%;
+top: 63%;
+}
+
+.msj_uno {
+width: 90%;
+height: auto;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 550;
+font-size: 1.4vw;
+line-height: 1.4rem;
+text-align: center;
+color: #ffffff;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+}
+
+.msj_dos {
+width: 90%;
+height: auto;
+margin-top: 1%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 1rem;
+font-size: 1.2vw;
+line-height: 1em;
+text-align: center;
+color: #8e8f8f;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+}
+
+/** Tablet **/
+
+@media screen and (min-width:481px) and (max-width:980px) {
+
+.texto {
+    width: 90%;
+    height: 50%;
+    left: 5%;
+}
+
+.contenedor {
+    width: 100%;
+    height: 160vh;
+}
+
+.advertencia {
+    left: 3%;
+    top: 80%;
+}
+
+.icono {
+    width: 10%;
+    height: auto;
+}
+
+.texto-adv {
+    font-size: 1.6vw;
+    margin-left: 1%;
+}
+
+.botones{
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70vh;
+    top: 85vh;
+    left: 0%;
+}
+
+.boton_uno{
+    width: 45vw;
+    height: 7vh;
+    margin-left: 3%;
+    margin-top: 1%;
+    border-radius: 5% 5% 5% 5% / 50% 50% 50% 50%;
+}
+
+.boton_dos{
+    width: 45vw;
+    height: 7vh;
+    margin-left: 2vw;
+    margin-top: 1%;
+    border-radius: 5% 5% 5% 5% / 50% 50% 50% 50%;
+}
+
+.boton_tres{
+    width: 80%;
+    height: 7vh;
+    margin-left: 10%;
+    margin-top: 30vh;
+    border-radius: 3% 3% 3% 3% / 50% 50% 50% 50%;
+}
+
+.btn_cop, .btn_en, .btn_des {
+    font-size: 2vw;
+    margin-top: 0vw;
+}
+
+.boton_uno:hover , .boton_dos:hover, .boton_tres:hover {
+    transform: none;
+}
+
+.boton_uno:active , .boton_dos:active, .boton_tres:active{
+    transform: translateY(10px);
+}
+
+.rectangulo {
+    position: absolute;
+    border-radius: 6% 6% 6% 6% / 12% 12% 12% 12% ;
+    box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.47);
+    width: 90vw;
+    height: 45vh;
+    left: 4%;
+    top: 100%;
+}
+
+.munieco {
+    top: 102vh;
+    width: 28vw;
+    height: 40vh;
+    left: 56%;
+    object-fit: scale-down;
+}
+
+.mensaje{
+    top: 112vh;
+    left: 12%;
+    width: 40vw;
+    height: 25vh;
+}
+
+.msj_uno {
+    width: 100%;
+    height: 10vh;
+    font-size: 3vw;
+    line-height: 120%;
+}
+
+.msj_dos {
+    width: 100%;
+    height: 8vh;
+    font-size: 2vw;
+}
+
+.resultado {
+    top: 103vh;
+    left: 9.5%;
+    width: 80%;
+    height: 30vh;
+}
+
+}
+
+@media screen and (max-width:480px) {
+    .texto {
+        width: 90%;
+        height: 50%;
+        left: 5%;
+    }
+    
+    .contenedor {
+        width: 100%;
+        height: 160vh;
+    }
+    
+    .advertencia {
+        left: 3%;
+        top: 80%;
+    }
+    
+    .icono {
+        width: 10%;
+        height: auto;
+    }
+    
+    .texto-adv {
+        font-size: 1.6vw;
+        margin-left: 1%;
+    }
+    
+    .botones{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 70vh;
+        top: 75vh;
+        left: 0%;
+    }
+    
+    .boton_uno{
+        width: 90vw;
+        height: 7vh;
+        margin-left: 2%;
+        margin-top: 1%;
+        border-radius: 5% 5% 5% 5% / 50% 50% 50% 50%;
+    }
+    
+    .boton_dos{
+        width: 90vw;
+        height: 7vh;
+        margin-left: 2vw;
+        margin-top: 1%;
+        border-radius: 5% 5% 5% 5% / 50% 50% 50% 50%;
+    }
+    
+    .boton_tres{
+        width: 80%;
+        height: 7vh;
+        margin-left: 10%;
+        margin-top: 30vh;
+        border-radius: 3% 3% 3% 3% / 50% 50% 50% 50%;
+    }
+    
+    .btn_cop, .btn_en, .btn_des {
+        font-size: 2vw;
+        margin-top: 0vw;
+    }
+    
+    .boton_uno:hover , .boton_dos:hover, .boton_tres:hover {
+        transform: none;
+    }
+    
+    .boton_uno:active , .boton_dos:active, .boton_tres:active{
+        transform: translateY(10px);
+    }
+    
+    .rectangulo {
+        position: absolute;
+        border-radius: 6% 6% 6% 6% / 12% 12% 12% 12% ;
+        box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.47);
+        -webkit-box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.47);
+        -moz-box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.47);
+        width: 90vw;
+        height: 45vh;
+        left: 4%;
+        top: 100%;
+    }
+    
+    .munieco {
+        top: 102vh;
+        width: 28vw;
+        height: 40vh;
+        left: 56%;
+        object-fit: scale-down;
+    }
+    
+    .mensaje{
+        top: 112vh;
+        left: 12%;
+        width: 40vw;
+        height: 25vh;
+    }
+    
+    .msj_uno {
+        width: 100%;
+        height: 10vh;
+        font-size: 3vw;
+        line-height: 120%;
+    }
+    
+    .msj_dos {
+        width: 100%;
+        height: 8vh;
+        font-size: 2vw;
+    }
+    
+    .resultado {
+        top: 103vh;
+        left: 9.5%;
+        width: 80%;
+        height: 30vh;
+    }            
+}

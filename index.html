@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="es-ES">
+
+<head>
+<meta charset="utf-8">
+<meta name="wiewport" content="width=device-width; initial-scale=1.0">
+<link rel="icon" href="alura.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+<title>Encriptador/desencriptador de texto ONE</title>
+</head>
+
+<body>
+<div class="contenedor">   
+    <header> 
+        <a href="https://www.aluracursos.com/">
+            <img src="Logo2.png" class="logo" alt="logo">
+        </a>
+    </header>    
+    <div class="input">
+        <textarea class="texto" id="texto" placeholder="ingrese el texto aqui"></textarea>
+    </div>
+    <div class="advertencia">
+        <iconify-icon class="icono" width="3.3vw" height="2.8vh" icon="mdi:warning-circle"></iconify-icon>
+        <p class="texto-adv">Solo letras minusculas y sin acentos.</p>
+    </div>
+    <div class="botones"> 
+        <div class="boton_uno" id="encriptar">
+            <p class="btn_en">Encriptar</p>
+        </div>
+        <div class="boton_dos" id="desencriptar">
+        <p class="btn_des">Desencriptar</p>
+        </div>
+        <div class="boton_tres" id="copiar">
+            <p class="btn_cop">Copiar</p>
+        </div>
+    </div>
+    <div>
+        <div class="rectangulo"></div>
+        <textarea class="resultado" id="resultado"></textarea>
+        <div class="" id="munieco">
+            <img src="Muñeco.png" alt="muñeco" class="munieco">
+        </div>
+        <div class="mensaje" id="mensaje">
+            <h1 class="msj_uno">Ningun mensaje fue encontrado</h1>
+            <p class="msj_dos">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+    </div>    
+</div> 
+<script src="app.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+</body>
+
+</html>
