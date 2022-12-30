@@ -6,11 +6,12 @@ body {
 margin: 0px;
 padding: 0px;
 font-family: sans-serif;
+display: flex;
 }
 
 .contenedor {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(19,55,121,1) 0%, rgba(2,17,37,1) 100%);
 }
@@ -257,7 +258,7 @@ flex-grow: 0;
 
 /** Tablet **/
 
-@media screen and (min-width:481px) and (max-width:980px) {
+@media all and (max-width:980px) {
 
 .texto {
     width: 90%;
@@ -377,32 +378,39 @@ flex-grow: 0;
     height: 30vh;
 }
 
-}
-
-@media screen and (max-width:480px) {
-    .texto {
-        width: 90%;
-        height: 50%;
-        left: 5%;
-    }
-    
+}@media all and (max-width:599px) {
     .contenedor {
         width: 100%;
         height: 160vh;
     }
     
+    .logo{
+        width: 35%;
+        left: -8%;
+        top: 3%;
+    }
+    
+    .texto {
+        width: 90%;
+        height: 50%;
+        left: 5%;
+        font-size: 8.5vw;
+    }
+    
+    
     .advertencia {
-        left: 3%;
-        top: 80%;
+        left: 5%;
+        top: 72%;
+        width: 70vw;
     }
     
     .icono {
-        width: 10%;
+        width: 5%;
         height: auto;
     }
     
     .texto-adv {
-        font-size: 1.6vw;
+        font-size: 3.2vw;
         margin-left: 1%;
     }
     
@@ -417,30 +425,43 @@ flex-grow: 0;
     .boton_uno{
         width: 90vw;
         height: 7vh;
-        margin-left: 2%;
+        margin-left: 5%;
         margin-top: 1%;
         border-radius: 5% 5% 5% 5% / 50% 50% 50% 50%;
+        position: absolute;
     }
     
     .boton_dos{
         width: 90vw;
         height: 7vh;
-        margin-left: 2vw;
-        margin-top: 1%;
+        margin-left: 5%;
+        margin-top: 20%;
         border-radius: 5% 5% 5% 5% / 50% 50% 50% 50%;
+        position: absolute;
     }
     
     .boton_tres{
         width: 80%;
-        height: 7vh;
-        margin-left: 10%;
-        margin-top: 30vh;
+        height: 5.5vh;
+        margin-left: 9%;
+        margin-top: 60vh;
         border-radius: 3% 3% 3% 3% / 50% 50% 50% 50%;
+        position: absolute;
+    }
+
+    .btn_en, .btn_des{
+        line-height: 10vh;
+    }
+
+    .btn_cop{
+        line-height: 8vh;
     }
     
     .btn_cop, .btn_en, .btn_des {
-        font-size: 2vw;
+        font-size: 5vw;
         margin-top: 0vw;
+        user-select: none;
+        position: absolute;
     }
     
     .boton_uno:hover , .boton_dos:hover, .boton_tres:hover {
@@ -496,5 +517,6 @@ flex-grow: 0;
         left: 9.5%;
         width: 80%;
         height: 30vh;
+        font-size: 6vw;
     }            
 }
