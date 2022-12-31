@@ -417,9 +417,10 @@ flex-grow: 0;
     .botones{
         flex-wrap: wrap;
         width: 100%;
-        height: 70vh;
-        top: 75vh;
+        height: auto;
+        top: 75%;
         left: 0%;
+        position: absolute;
     }
     
     .boton_uno{
@@ -435,7 +436,7 @@ flex-grow: 0;
         width: 90vw;
         height: 7vh;
         margin-left: 5%;
-        margin-top: 20%;
+        margin-top: 25%;
         border-radius: 5% 5% 5% 5% / 50% 50% 50% 50%;
         position: absolute;
     }
@@ -444,7 +445,7 @@ flex-grow: 0;
         width: 80%;
         height: 5.5vh;
         margin-left: 9%;
-        margin-top: 60vh;
+        margin-top: 62vh;
         border-radius: 3% 3% 3% 3% / 50% 50% 50% 50%;
         position: absolute;
     }
