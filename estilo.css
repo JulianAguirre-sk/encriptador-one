@@ -445,7 +445,7 @@ flex-grow: 0;
         width: 80%;
         height: 5.5vh;
         margin-left: 9%;
-        margin-top: 62vh;
+        margin-top: 58vh;
         border-radius: 3% 3% 3% 3% / 50% 50% 50% 50%;
         position: absolute;
     }
@@ -486,35 +486,35 @@ flex-grow: 0;
     }
     
     .munieco {
-        top: 102vh;
-        width: 28vw;
+        top: 100%;
+        width: 40vw;
         height: 40vh;
-        left: 56%;
+        left: 48%;
         object-fit: scale-down;
     }
     
     .mensaje{
-        top: 112vh;
-        left: 12%;
-        width: 40vw;
-        height: 25vh;
+        top: 108%;
+        left: 10%;
+        width: 38vw;
+        height: 10vh;
     }
     
     .msj_uno {
         width: 100%;
         height: 10vh;
-        font-size: 3vw;
+        font-size: 5vw;
         line-height: 120%;
     }
     
     .msj_dos {
         width: 100%;
         height: 8vh;
-        font-size: 2vw;
+        font-size: 3.8vw;
     }
     
     .resultado {
-        top: 103vh;
+        top: 100%;
         left: 9.5%;
         width: 80%;
         height: 30vh;
