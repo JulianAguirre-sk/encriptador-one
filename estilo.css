@@ -304,7 +304,7 @@ footer p {
 
 /** Tablet **/
 
-@media all and (max-width:900px) {
+@media all and (max-width:800px) {
 
 .logo {
     width: 30vw;
@@ -599,5 +599,25 @@ footer p {
         width: 80%;
         height: 30vh;
         font-size: 6vw;
-    }            
+    }
+    
+    .linkedin, .github {
+        width: 15%;
+        margin-top: -10%;
+    }
+
+    .linkedin {
+        margin-left: -10%;
+    }
+
+    .github {
+        margin-left: 10%;
+    }
+
+    footer p {
+        font-size: 3.5vw;
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 25%;
+    }
 }
