@@ -10,7 +10,7 @@ display: flex;
 }
 
 .contenedor {
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background: rgb(2,0,36);
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(19,55,121,1) 0%, rgba(2,17,37,1) 100%);
@@ -23,6 +23,7 @@ width: 10%;
 height: auto;
 left: 0%;
 top: 5%;
+
 }
 
 .texto {
@@ -256,34 +257,87 @@ align-self: stretch;
 flex-grow: 0;
 }
 
+footer {
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    margin-top: 105vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 2% 2% 25% 25% / 30% 30% 0% 0%;
+    
+}
+
+.linkedin, .github {
+    width: 4%;
+    position: absolute;
+    margin-top: -3%;
+    left: 43%;
+    transition: all 0.25s;
+    
+}
+
+.linkedin {
+    margin-left: 0%;
+}
+
+.github {
+    margin-left: 6%;
+}
+
+footer p {
+    color: black;
+    position: absolute;
+    margin-left: 34%;
+    margin-top: 6%;
+    
+}
+
+.linkedin:hover, .github:hover{
+    transform: translateY(-10px);
+}
+
+.linkedin:active, .github:active {
+    transform: translateY(10px);
+}
+
 /** Tablet **/
 
-@media all and (max-width:980px) {
+@media all and (max-width:900px) {
+
+.logo {
+    width: 30vw;
+    left: -7%;
+    top: 3.5%;
+}
 
 .texto {
     width: 90%;
     height: 50%;
     left: 5%;
+    font-size: 7vw;
 }
 
 .contenedor {
     width: 100%;
-    height: 160vh;
+    height: 170vh;
 }
 
 .advertencia {
     left: 3%;
     top: 80%;
+    width: 60%;
 }
 
 .icono {
-    width: 10%;
+    width: 7%;
     height: auto;
 }
 
 .texto-adv {
-    font-size: 1.6vw;
-    margin-left: 1%;
+    font-size: 2.8vw;
+    margin-left: 0%;
 }
 
 .botones{
@@ -297,7 +351,7 @@ flex-grow: 0;
 .boton_uno{
     width: 45vw;
     height: 7vh;
-    margin-left: 3%;
+    margin-left: 4%;
     margin-top: 1%;
     border-radius: 5% 5% 5% 5% / 50% 50% 50% 50%;
 }
@@ -313,14 +367,15 @@ flex-grow: 0;
 .boton_tres{
     width: 80%;
     height: 7vh;
-    margin-left: 10%;
+    margin-left: 9%;
     margin-top: 30vh;
     border-radius: 3% 3% 3% 3% / 50% 50% 50% 50%;
 }
 
 .btn_cop, .btn_en, .btn_des {
-    font-size: 2vw;
+    font-size: 3.5vw;
     margin-top: 0vw;
+    user-select: none;
 }
 
 .boton_uno:hover , .boton_dos:hover, .boton_tres:hover {
@@ -337,8 +392,8 @@ flex-grow: 0;
     box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.47);
     -webkit-box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.47);
     -moz-box-shadow: 0px 10px 15px 3px rgba(0,0,0,0.47);
-    width: 90vw;
-    height: 45vh;
+    width: 91.5vw;
+    height: 47vh;
     left: 4%;
     top: 100%;
 }
@@ -376,6 +431,32 @@ flex-grow: 0;
     left: 9.5%;
     width: 80%;
     height: 30vh;
+    font-size: 4.5vw;
+}
+
+footer {
+    margin-top: 155vh;
+    height: 15vh;
+}
+
+footer p {
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 15%;
+    font-size: 3vw;
+}
+
+.linkedin, .github {
+    width: 8%;
+    margin-top: -6%;
+}
+
+.linkedin {
+    margin-left: -1%;
+}
+
+.github {
+    margin-left: 8%;
 }
 
 }@media all and (max-width:599px) {
@@ -490,7 +571,6 @@ flex-grow: 0;
         width: 40vw;
         height: 40vh;
         left: 48%;
-        object-fit: scale-down;
     }
     
     .mensaje{
