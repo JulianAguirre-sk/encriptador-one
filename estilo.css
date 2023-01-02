@@ -289,9 +289,9 @@ footer {
 footer p {
     color: black;
     position: absolute;
-    margin-left: 34%;
+    margin-left: 10%;
     margin-top: 6%;
-    
+    width: 80%;
 }
 
 .linkedin:hover, .github:hover{
